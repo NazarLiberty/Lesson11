@@ -1,0 +1,187 @@
+@font-face {
+    font-family: "Museo Sans Rounded";
+    src: url('./MuseoSans/MuseoSansRounded500.woff') format('woff');
+}
+    @font-face {
+    font-family: "Museo Sans Rounded";
+    src: url('./MuseoSans/MuseoSansRounded100.woff') format('woff');
+} 
+    @font-face {
+    font-family: "Museo Sans Rounded";
+    src: url('./MuseoSans/MuseoSansRounded700.woff') format('woff');
+ }
+    
+*{
+    box-sizing: border-box;
+    transition: linear .4s all;
+}
+.l-container{
+    width: 800px;
+    height: 600px;
+    margin-top: 72px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container{
+    background-image: url(./img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.l-lot{
+    width: 687px;
+    height: 391px;
+  
+}
+.lot{
+    background-color: #111a28;
+    position: relative;
+    top: 5px;
+    left: 5px;
+    box-shadow: 0 0 200px rgba(0, 0, 0, 0.74);
+    border-radius: 10px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.b-logo{
+    width: 687px;
+    height: 70px;
+}
+.b-logo__logo{
+    position: relative;
+    top: 23px;
+    left: 22px;
+}
+.b-img-content{
+    width: 420px;
+    height: 321px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.b-img-content__img{
+    position: relative;
+    top:55px;
+    right: 10px;
+}
+.b-img-content__circles-block{
+    position: absolute;
+    bottom: 15px;
+}
+.b-img-content__circles{
+    border: 3px solid transparent;
+}
+.b-img-content__circles--black-fix{
+    transform: translateY(2px) scale(0.9,0.9);
+}
+.b-img-content__circles:hover{
+    border: solid rgba(175, 175, 175, 0.582) 3px;
+    border-radius: 50px;
+}
+.b-interactive{
+    width: 267px;
+    height: 321px;
+}
+.b-interactive__title{
+    font-size: 24px;
+    line-height: 1.083;
+    color: rgb(225, 225, 225); 
+    padding-right: 40px;  
+    padding-left: 25px;
+    padding-top: 5px;
+    font-family: "Museo Sans Rounded", sans-serif;
+    font-weight: 100;
+}
+.b-interactive__description{
+        font-size: 14px;
+        color: rgba(225, 225, 225, 0.541);
+        line-height: 1.857;
+    padding-right: 40px;
+padding-left: 25px;
+padding-top: 5px;
+font-family: "Museo Sans Rounded", sans-serif;
+font-weight: 100;
+}
+.b-interactive__stars-block{
+    margin: 15px 25px;
+    position: relative;
+    height: 17px;
+}
+.b-interactive__stars{
+    margin-left: -5px;
+    position: relative;
+    left: 5px;
+}
+.b-interactive__stars--empty{
+    margin: 0;
+    position: relative;
+    left:-1px;
+    padding-bottom: 1px;
+}
+.b-interactive__dropdown{
+    display: flex; 
+    padding-left: 27px;
+    padding-top: 10px;
+    font-family: "MuseoSansRounded", sans-serif;
+    font-weight: 100;
+}
+.b-interactive__size,.b-interactive__qty{
+    width: 69px;
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 32px;
+    margin-right: 2px;
+    border: rgba(255, 255, 255, 0.74) 1px solid;
+    color: rgba(255, 255, 255, 0.74);
+    font-size: 14px;
+}
+.b-interactive__content-qty,.b-interactive__content-size{
+    position: absolute;
+    top:0px;
+    padding: 14px 16px;
+    width: 69px; 
+    z-index: 2;
+    display: none;
+    color: rgba(255, 255, 255, 0.671);
+ 
+}
+.b-interactive__cell{
+    border: rgba(255, 255, 255, 0.74) 1px solid;
+    width: 69px;
+    padding: 10px 25px;
+    position: relative;
+    right: 16px;
+    top:15px;
+    margin:0;
+    background-color: #111a28;
+}
+.b-interactive__qty:hover .b-interactive__content-qty,.b-interactive__size:hover .b-interactive__content-size{
+   display: block;
+}
+.b-interactive__cell:hover{
+    background-color: #202835;
+    cursor: pointer;
+}
+.b-interactive__order-button{
+    width: 185px;
+    height: 40px;
+    border: #4f5560 1px solid;
+    color: rgba(255, 255, 255, 0.733);
+    position: relative;
+    left: 27px;
+    top:28px;
+    background-color: #111a28;
+    font-family: "Museo Sans Rounded", sans-serif;
+    font-size: 14px;
+}
+.b-interactive__order-button:hover{
+    background-color: #202835;
+}
+.b-interactive__order-button:focus{
+    outline: 0;
+}
