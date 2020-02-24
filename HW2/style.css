@@ -18,29 +18,24 @@
 .l-container{
     width: 800px;
     height: 600px;
-    margin-top: 72px;
     margin-left: auto;
     margin-right: auto;
-}
-.container{
     background-image: url(./img/background.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 .l-lot{
-    width: 687px;
-    height: 391px;
-  
-}
-.lot{
-    background-color: #111a28;
     position: relative;
     top: 5px;
     left: 5px;
+}
+.lot{
+    background-color: #111a28;
+    width: 687px;
+    height: 391px;
     box-shadow: 0 0 200px rgba(0, 0, 0, 0.74);
     border-radius: 10px;
     display: flex;
